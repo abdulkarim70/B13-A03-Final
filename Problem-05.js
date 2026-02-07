@@ -1,19 +1,19 @@
 function  analyzeText(str) {
-if()
+if(typeof(str)!=="string" || str.trim()===""){
+  return 'Invalid'
+}
       let words= str.split(" ")  
-      let longWord ="" ;
+      let longword ="" ;
       for(let word of words ){
-        if(word.length>longWord.length){
-          longWord=word;
+        if(word.length>longword.length){
+          longword=word;
         }
       }
-let length=str.split(" ").join("").length
+let length=str.split(" ").join("").length;
 return{
-  longWords: longWord , token :length
+  longwords: longword , token :length
 };
 
 }
 
 
-let test =analyzeText("A quick brown fox")
-console.log(test)
