@@ -1,25 +1,26 @@
 function gonoVote(array) {
     if(!Array.isArray(array)){
-return "Invalid"
+return "Invalid";
     }
          let countHa=0;
          let countNa=0;
        for (let ans of array){
         if(ans==='ha'){
-            countHa++
+            countHa++;
         }
         if(ans==='na'){
-            countNa++
+            countNa++;
         }
        }
   if(countHa>countNa){
-    return true
+    return true;
   }
  if(countHa==countNa){
-    return "equal"
+    return "equal";
  }
  else {
-    return false
+    return false;
  }
  
 }
+
