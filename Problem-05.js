@@ -1,5 +1,5 @@
 function  analyzeText(str) {
-
+if()
       let words= str.split(" ")  
       let longWord ="" ;
       for(let word of words ){
@@ -15,5 +15,5 @@ return{
 }
 
 
-let test =analyzeText("Keep coding keep shining")
+let test =analyzeText("A quick brown fox")
 console.log(test)
